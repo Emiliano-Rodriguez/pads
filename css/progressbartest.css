@@ -17,6 +17,14 @@
 }
 
 
+.box_center_mid_vertical {
+    position: absolute;
+    right: 34%;
+    top: 65%;
+    width: 45%;
+    height: 200px;
+    margin-right: 6%;
+}
 
 .dateFrame {
   width: 50%;

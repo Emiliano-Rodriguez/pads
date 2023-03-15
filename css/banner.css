@@ -4,3 +4,10 @@
   border: 2px solid green;
   bottom: -4%;
 }
+
+.banner_vertical {
+  position: fixed;
+  width: 100%;
+  border: 2px solid green;
+  bottom: -2%;
+}

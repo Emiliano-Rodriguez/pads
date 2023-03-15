@@ -13,3 +13,11 @@
   border: 2px solid green;
 }
 
+.box_vertical {
+    position: absolute;
+    top: 28%;
+    left: 3%;
+    width: 94%;
+    height: 35%;
+/*   border: 2px solid green; */
+}

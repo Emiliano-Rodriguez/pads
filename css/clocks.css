@@ -35,7 +35,23 @@
   margin-right:6%;
 }
 
+.box_center_top_vertical {
+    position: absolute;
+    right: 48%;
+    top: 85%;
+    width: 40%;
+    height: 100px;
+    margin-right: 6%;
+}
 
+.box_center_top_bottom_vertical {
+    position: absolute;
+    right: 45%;
+    top: 90%;
+    width: 40%;
+    height: 100px;
+    margin-right: 6%;
+}
 
 .clockSA {
     position: absolute;
