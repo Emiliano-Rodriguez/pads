@@ -14,3 +14,11 @@
   height:10%;
 }
 
+
+.box_center_left_bottom_vertical {
+  position: absolute;
+  top:81%;
+  right:32%;
+  width: 25%;
+  height:10%;
+}

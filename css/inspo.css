@@ -15,3 +15,13 @@
   margin-right:6%;
   border: 2px solid blue;
 }
+
+.box_right_vertical {
+    position: absolute;
+    left: 71.5%;
+    width: 28%;
+    top: 65%;
+    height: 530px;
+    margin-right: 6%;
+/*    border: 2px solid blue; */
+}
