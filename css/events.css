@@ -1,0 +1,16 @@
+.box_center_left_bottom {
+  position: absolute;
+  top:85%;
+  right:35%;
+  width: 25%;
+  height:10%;
+}
+
+.box_center_left_bottom_ipad {
+  position: absolute;
+  top:72%;
+  right:1%;
+  width: 25%;
+  height:10%;
+}
+

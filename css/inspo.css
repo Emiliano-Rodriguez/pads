@@ -1,0 +1,17 @@
+.box_right {
+  position:absolute;
+  left:71%;
+  width: 28%;
+  height:560px;
+  margin-right:6%;
+  border: 2px solid blue;
+}
+
+.box_right_ipad {
+  position:absolute;
+  left:31%;
+  width: 28%;
+  height:560px;
+  margin-right:6%;
+  border: 2px solid blue;
+}
