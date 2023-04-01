@@ -26,7 +26,7 @@ var i = 1;
       setTimeout(function() {
         console.log(data[i].title);
         const n1 = document.getElementById('news')
-        const heading1 = `<p style="text-align:center;font-size: 13px; color: #1FFF0F; font-weight:bold;">TOP NEWS</br></br> ${data[i].title}</br></br> <img src=${data[i].image} style="width:150px;height:150px;float:center;"> </br></br> ${data[i].description} </p>`
+        const heading1 = `<p style="text-align:center;font-size: 15px; color: #1FFF0F; font-weight:bold;">TOP NEWS</br></br> ${data[i].title}</br></br> <img src=${data[i].image} style="width:150px;height:150px;float:center;"> </br></br> ${data[i].description} </p>`
 
         n1.innerHTML = heading1
         i++;
