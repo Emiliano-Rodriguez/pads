@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Quadrant View</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        height: 100vh;
+      }
+      .quadrant {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+      }
+      .quadrant iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .quadrant.active {
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="quadrant active">
+        <iframe src="ipad.html"></iframe>
+      </div>
+      <div class="quadrant">
+        <iframe src="ipad_2.html"></iframe>
+      </div>
+      <div class="quadrant">
+        <p>Loading FlightRadar24 website...</p>
+      </div>
+      <div class="quadrant">
+        <p>Loading metar website...</p>
+      </div>
+    </div>
+    <script>
+      var quadrantIndex = 0;
+      var quadrants = document.querySelectorAll('.quadrant');
+      quadrants[quadrantIndex].classList.add('active'); // Show the initial quadrant
+      var flightRadarWindow = null;
+      var metarTafWindow = null;
+      setInterval(function() {
+        quadrants[quadrantIndex].classList.remove('active');
+        quadrantIndex = (quadrantIndex + 1) % 4;
+        if (quadrantIndex === 2) { // If we're on the FlightRadar24 quadrant
+          if (flightRadarWindow === null || flightRadarWindow.closed) {
+            flightRadarWindow = window.open('https://www.flightradar24.com/29.85,-98.39/9', '_blank');
+          }
+        } else {
+          if (flightRadarWindow !== null && !flightRadarWindow.closed) {
+            flightRadarWindow.close();
+            flightRadarWindow = null;
+          }
+      if (quadrantIndex === 3) { // If we're on the Metar Taf quadrant
+        if (metarTafWindow === null || metarTafWindow.closed) {
+          metarTafWindow = window.open('https://metar-taf.com/?c=296687.-980681.9', '_blank');
+        }
+      } else {
+        if (metarTafWindow !== null && !metarTafWindow.closed) {
+          metarTafWindow.close();
+          metarTafWindow = null;
+        }
+      }
+
+          quadrants[quadrantIndex].classList.add('active');
+        }
+      }, 25000); //25 seconds
+    </script>
+  </body>
+</html>
+
