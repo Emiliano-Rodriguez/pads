@@ -2,9 +2,10 @@
   position:absolute;
   left:71%;
   width: 28%;
-  height:560px;
+  height:406px;
   margin-right:6%;
   border: 2px solid blue;
+  top:49%;
 }
 
 .box_right_ipad {
