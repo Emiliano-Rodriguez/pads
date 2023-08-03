@@ -1,5 +1,5 @@
 const apiKey = "b535be27f238aae71c23d703361bd682";
-const inputVal = "Austin";
+const inputVal = "Pensacola";
 
 const weather = async()=>{
 
@@ -12,7 +12,7 @@ SUBSCRIBE HERE: https://home.openweathermap.org/users/sign_up*/
 const apiKey = "4d8fb5b93d4af21d66a2948710284366";
 
 const listItems = list.querySelectorAll(".ajax-section .city");
-const inputVal = "Austin";
+const inputVal = "Pensacola";
 
   //ajax here
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${apiKey}&units=imperial`;
