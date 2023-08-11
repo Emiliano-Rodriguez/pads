@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Demo</title>
+    <style>
+        video {
+            width: 100%;
+            max-width: 640px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webcam Demo</h1>
+    <video id="webcam" autoplay></video>
+    
+    <script>
+        async function startWebcam() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                const webcamElement = document.getElementById('webcam');
+                webcamElement.srcObject = stream;
+            } catch (error) {
+                console.error('Error accessing webcam:', error);
+            }
+        }
+        
+        startWebcam();
+    </script>
+</body>
+</html>
