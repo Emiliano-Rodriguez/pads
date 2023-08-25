@@ -6,6 +6,13 @@
   height:10%;
 }
 
+.box_center_left_bottom_mobile {
+  position: absolute;
+  top:390%;
+  right:12%;
+  width: 75%;
+  height:50%;
+}
 .box_center_left_bottom_ipad {
   position: absolute;
   top:72%;

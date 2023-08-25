@@ -7,6 +7,16 @@
   margin-right:6%;
 }
 
+
+.box_center_top_mobile {
+  position:absolute;
+  right:30%;
+  top:62%;
+  width: 106%;
+  height:100px;
+  margin-right:-55%;
+}
+
 .box_center_top_bottom {
   position:absolute;
   right:30%;
@@ -14,6 +24,15 @@
   width: 30%;
   height:100px;
   margin-right:6%;
+}
+
+.box_center_top_bottom_mobile {
+  position:absolute;
+  right:30%;
+  top:73%;
+  width: 105%;
+  height:100px;
+  margin-right:-55%;
 }
 
 .box_center_top_ipad {

@@ -6,6 +6,13 @@
   top: 43%;
 }
 
+.box_mobile {
+  position:absolute;
+  width: 94%;
+  height:52%;
+  top: 205%;
+}
+
 .box_ipad {
   position:absolute;
   top:1%;

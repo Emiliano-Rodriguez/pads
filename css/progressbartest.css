@@ -16,6 +16,16 @@
   margin-right:6%;
 }
 
+.box_center_mid_mobile {
+   position: absolute;
+   right: 69%;
+   top: 147%;
+   width: 94%;
+   height: 317px;
+   margin-right: -66%;
+   border: solid blue 2px;
+}
+
 
 .box_center_mid_vertical {
     position: absolute;

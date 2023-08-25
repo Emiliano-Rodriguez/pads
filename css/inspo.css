@@ -8,6 +8,15 @@
   top:49%;
 }
 
+.box_right_mobile {
+  position:absolute;
+  left:1%;
+  width: 96%;
+  height:500px;
+  margin-right:6%;
+  border: 2px solid blue;
+  top:310%;
+}
 .box_right_ipad {
   position:absolute;
   left:31%;
