@@ -2,7 +2,7 @@ const laws = ["1. Never Outshine the Master","2. Never Put Too Much Trust in Fri
 ];
 
 const motivation = async()=>{
-var i = 1;
+var i = 0;
     function myLoop() {
       setTimeout(function() {
         console.log(laws[i]);
@@ -10,13 +10,13 @@ var i = 1;
         const heading1 = `</br></br><p style="position: absolute; top:15%;padding-right:2%; font-size: 25px; color: #FF7A59; line-height: 80%; font-weight:bold;">${laws[i]}</p>`
         n1.innerHTML = heading1
         i++;
-        if (i < 31) {
-          if(i == 30){
-            i = 1;
+        if (i < 49) {
+          if(i == 48){
+            i = 0;
           }
           myLoop();
         }
-      }, 7000)
+      }, 5000)
     }
 myLoop();
 }
