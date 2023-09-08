@@ -8,6 +8,19 @@
   top:49%;
 }
 
+
+.box_right_counter {
+    position: absolute;
+    left: 50%;
+    width: 20%;
+    height: 194px;
+    margin-right: 6%;
+    border: 1px solid red;
+    top: 55%;
+}
+
+
+
 .box_right_mobile {
   position:absolute;
   left:1%;
